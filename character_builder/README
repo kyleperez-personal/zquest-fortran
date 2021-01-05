@@ -1,0 +1,63 @@
+***How to Run in Linux Terminal***
+
+I write this based off of everything being in the Home directory. Use 'cd' appropriately to get to the desired directory.
+
+gfortran -o testquest testquest.f90
+
+From here, the code should compile and be ready to run. To run:
+
+./testquest
+
+
+
+
+***To compile a new module***
+Use:
+
+gfortran -c module.f90
+
+
+
+
+
+***Most code requires the proper_cap module in order to run.***
+
+In this case, to run:
+
+gfortran -o testquest testquest.f90 proper_cap.f90
+or
+gfortran -o name_select name_select.f90 proper_cap.f90 lower_cap.f90
+
+
+
+
+
+
+Enjoy!
+
+
+Running the current main program:
+
+gfortran -o character_build character_build.f90 gender_select.f90 age_select.f90 race_select.f90 location_select.f90 holy_order_select.f90 career_select.f90 background_select.f90 name_select.f90 proper_cap.f90 lower_cap.f90 cap_functions.f90
+
+
+
+
+
+
+-------CURRENT ISSUES---------
+
+
+
+-------IN PROGRESS---------
+Need to make certain careers gender specific.
+
+
+
+Import race from previous function for use in Holy Order selector.
+Importing things from previous functions to other functions via modules.
+
+
+------- TO ADD -----------
+Print character stats to a file.
+

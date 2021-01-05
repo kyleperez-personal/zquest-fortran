@@ -1,0 +1,23 @@
+**RUNNING**
+To run the character builder, simply cd into the character_builder folder and then use ./character_build
+
+If the file is missing, run make and it should appear.
+
+To run the introduction, simpley cd into the campaign_part_one folder and then use ./introduction
+
+If the file is missing, run make and it should appear.
+
+**COMPILATION**
+To compile a file that contains a module 'module', use
+gfortran -c module.f90
+
+From here, the make file should do the rest of the work. It contains the command input to terminal to compile it. It can be copied directly.
+
+**ansi.f90**
+ansi.f90 is a module that allows you to print text in different colors using the color function.
+
+To compile this module (source: http://fortranwiki.org/fortran/show/ansi_colors) use
+gfortran -std=f2003 -c ansi.f90
+
+Call the module in a program via
+use ansi_colors
